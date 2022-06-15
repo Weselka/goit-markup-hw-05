@@ -353,6 +353,10 @@ img {
     padding-top: 0;
 }
 
+.work-item {
+    position: relative;
+}
+
 .work-subtitle {
     position: absolute;
     bottom: 0;
@@ -374,11 +378,6 @@ img {
     background: rgba(47, 48, 58, 0.8);
     color: #FFFFFF;
 }
-
-.work-item {
-    position: relative;
-}
-
 
 /*--------------Секція Наша команда---------------*/
 
@@ -685,6 +684,51 @@ img {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.gallery-thumb {
+    position: relative;
+}
+
+.thumb-text {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 322px;
+    height: 168px;
+
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    opacity: 0;
+}
+
+.gallery-section:hover .thumb-text {
+    opacity: 1;
+}
+
+.gallery-section {
+    position: relative;
+}
+
+.gallery-thumb::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background: rgba(33, 150, 243, 0.9);
+
+    opacity: 0;
+}
+
+.gallery-section:hover .gallery-thumb::before {
+    opacity: 1;
+}
+
 /*----------------------Модальне вікно----------*/
 
 .backdrop {
@@ -727,5 +771,7 @@ img {
     margin: 8px 8px 0 auto;
     
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    border-radius: 50%;
+
+    cursor: pointer;
 }
