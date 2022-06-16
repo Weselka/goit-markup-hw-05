@@ -517,7 +517,6 @@ img {
 
 .logo-down {
     color: var(--more-text-color);
-    padding-top: 60px;
 }
 
 .footer-address {
@@ -705,7 +704,8 @@ img {
     opacity: 0;
 }
 
-.gallery-section:hover .thumb-text {
+.gallery-section:hover .thumb-text,
+.gallery-section:focus .thumb-text {
     opacity: 1;
 }
 
@@ -725,7 +725,8 @@ img {
     opacity: 0;
 }
 
-.gallery-section:hover .gallery-thumb::before {
+.gallery-section:hover .gallery-thumb::before,
+.gallery-section:focus .gallery-thumb::before {
     opacity: 1;
 }
 
