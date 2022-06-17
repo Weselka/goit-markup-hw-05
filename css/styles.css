@@ -286,7 +286,7 @@ img {
 
     cursor: pointer;
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -421,6 +421,7 @@ img {
 .teams-soc-item {
     width: 44px;
     height: 44px;
+    
 }
 .teams-soc-item:not(:last-child) {
     margin-right: 10px;
@@ -435,6 +436,7 @@ img {
 
     color: var(--subgect-color);
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
 }
 
@@ -446,6 +448,7 @@ img {
 .teams-soc-link:focus {
     background-color: var(--accent-color);
     color: var(--more-text-color);
+    
 }
 
 /*-------------------Постійні клієнти------------------*/
@@ -453,7 +456,7 @@ img {
 .clients-list {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 50px;    
 }
 
 .clients-item {
@@ -477,6 +480,8 @@ img {
     height: 100%;
 
     color: var(--subgect-color);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -583,6 +588,7 @@ img {
     color: var(--more-text-color);
 
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
