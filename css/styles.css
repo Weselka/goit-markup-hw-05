@@ -685,61 +685,30 @@ img {
 
 .gallery-thumb {
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .thumb-text {
     position: absolute;
-    content: '';
     top: 0;
-    transform: translate(100%);
-    /* width: 322px;
-    height: 168px; */
+    padding: 63px 24px;
+    height: 100%;
 
-    color: black;
-
-    /* color: #FFFFFF;     */
+    color: #FFFFFF;    
     background: rgba(33, 150, 243, 0.9);
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
 
-    /* opacity: 0; */
-    /* 
-    transform: translateY(calc(30% + 30px));
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-/* 
-.gallery-section:hover .thumb-text,
-.gallery-section:focus .thumb-text {
-    opacity: 1;
-    transform: translateY(-150px);
-} */
-
-/* .gallery-section {
-    position: relative;
-} */
-
-/* .gallery-thumb::before {    
-    position: absolute;
-    content: "";
-
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(33, 150, 243, 0.9);
-
-    opacity: 0;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+    overflow: auto;
+}
 
-/* .gallery-section:hover .gallery-thumb::before,
-.gallery-section:focus .gallery-thumb::before {
-    opacity: 1;
-    transform: translateY(100%);
-} */
+.gallery-section:hover .thumb-text,
+.gallery-section:focus .thumb-text {    
+    transform: translateY(0);
+}
 
 /*----------------------Модальне вікно----------*/
 
@@ -785,5 +754,5 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
-    cursor: pointer;
+    /* cursor: pointer; */
 }
