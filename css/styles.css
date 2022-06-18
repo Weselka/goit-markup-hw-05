@@ -708,7 +708,7 @@ img {
 
     transform: translateY(100%);
     transition: transform var(--transition);
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .gallery-section:hover .thumb-text,
